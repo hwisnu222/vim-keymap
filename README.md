@@ -23,40 +23,40 @@
 - example: After `dw`, `.` → delete next word  
 
 ## Navigation
-h: Move left  
+`h`: Move left  
 - mnemonic: Left  
 
-j: Move down  
+`j`: Move down  
 - mnemonic: Down  
 
-k: Move up  
+`k`: Move up  
 - mnemonic: Up  
 
-l: Move right  
+`l`: Move right  
 - mnemonic: Right  
 
-w: Next word start  
+`w`: Next word start  
 - mnemonic: **w**ord  
 
-b: Previous word start  
+`b`: Previous word start  
 - mnemonic: **b**ack  
 
-e: Next word end  
+`e`: Next word end  
 - mnemonic: **e**nd  
 
-0: Start of line  
+`0`: Start of line  
 - mnemonic: Zero position  
 
-^: First non-blank char  
+`^`: First non-blank char  
 - mnemonic: (none)  
 
-$: End of line  
+`$`: End of line  
 - mnemonic: (none)  
 
-gg: Top of file  
+`gg`: Top of file  
 - mnemonic: (none)  
 
-G: Bottom of file  
+`G`: Bottom of file  
 - mnemonic: (none)  
 
 `H`: Top of screen  
@@ -101,7 +101,7 @@ G: Bottom of file
 - mnemonic: **c**hange **i**nside 'quotes'
 - example: `ci'` → edit 'text' between single quotes
 
-ci(: Change inside parentheses
+`ci(`: Change inside parentheses
 - mnemonic: **c**hange **i**nside (parens)
 - example: `ci(` → edit (text) inside parentheses
 
@@ -196,111 +196,111 @@ ci(: Change inside parentheses
 - mnemonic: * is a wildcard → expand current word
 - example: Over "text", * finds next "text"
 
-#: Search word under cursor (backward)
+`#`: Search word under cursor (backward)
 - mnemonic: # is shift+3 (opposite of *)
 - example: Over "text", # finds previous "text"
 
 ### Replace command
-:%s/old/new/g: Replace all in file
+`:%s/old/new/g`: Replace all in file
 - mnemonic: **s**ubstitute **g**lobally
 - example: :%s/cat/dog/g changes all "cat" to "dog"
 
-:%s/old/new/gc: Replace with confirmation
+`:%s/old/new/gc`: Replace with confirmation
 - mnemonic: **c**onfirm each change
 - example: :%s/foo/bar/gc asks before each replace
 
-:s/old/new/g: Replace in current line
+`:s/old/new/g`: Replace in current line
 - mnemonic: No % → current line only
 - example: :s/yes/no/g changes on current line
 
 ## 📦 Window Management
-Ctrl+w c: Close current window
+`Ctrl+w c`: Close current window
 - mnemonic: **c**lose
 - example: Closes current pane (buffer stays loaded)
 
-Ctrl+w o: Close other windows
+`Ctrl+w o`: Close other windows
 - mnemonic: **o**nly
 - example: Keeps only current pane open
 
-Ctrl+w =: Equalize window sizes
+`Ctrl+w =`: Equalize window sizes
 - mnemonic: **=** (equals sign for balance)
 - example: Makes all panes equal size
 
-Ctrl+w _: Maximize current window
+`Ctrl+w _`: Maximize current window
 - mnemonic: **_** (underscore = expand height)
 - example: Current pane takes full height
 
 ### Window splitting
-:sp: Horizontal split
+`:sp`: Horizontal split
 - mnemonic: **sp**lit horizontally
 - example: :sp file.txt opens file in pane below
 
-:vsp: Vertical split
+`:vsp`: Vertical split
 - mnemonic: **v**ertical **sp**lit
 - example: :vsp file.txt opens file in pane to the right
 
-Ctrl+w s: Split window horizontally
+`Ctrl+w s`: Split window horizontally
 - mnemonic: **s**plit (same as :sp)
 - example: Splits current buffer horizontally
 
-Ctrl+w v: Split window vertically
+`Ctrl+w v`: Split window vertically
 - mnemonic: **v**ertical (same as :vsp)
 - example: Splits current buffer vertically
 
 ### Window navigation
-Ctrl+w h: Move to left window
+`Ctrl+w h`: Move to left window
 - mnemonic: **h** (vim's left movement key)
 - example: Move cursor to left pane
 
-Ctrl+w j: Move to window below
+`Ctrl+w j`: Move to window below
 - mnemonic: **j** (vim's down movement key)
 - example: Jump to lower pane
 
-Ctrl+w k: Move to window above
+`Ctrl+w k`: Move to window above
 - mnemonic: **k** (vim's up movement key)
 - example: Jump to upper pane
 
-Ctrl+w l: Move to right window
+`Ctrl+w l`: Move to right window
 - mnemonic: **l** (vim's right movement key)
 - example: Move cursor to right pane
 
 ## Advanced Operations
 ### Macro command
-q[a-z]: Start recording macro
+`q[a-z]`: Start recording macro
 - mnemonic: **q**ueue recording in register [a-z]
 - example: `qa` starts recording to register 'a'
 
-q: Stop recording macro
+`q`: Stop recording macro
 - mnemonic: **q**uit recording
 - example: Press `q` to finish macro recording
 
-@[a-z]: Execute macro
+`@[a-z]`: Execute macro
 - mnemonic: **@**tack (run) from register [a-z]
 - example: `@a` plays back macro from 'a'
 
-@@: Repeat last macro
+`@@`: Repeat last macro
 - mnemonic: Double **@** = repeat last action
 - example: After `@a`, `@@` runs 'a' again
 
 ### Number operations
-Ctrl+a: Increment number
+`Ctrl+a`: Increment number
 - mnemonic: **+a** (think addition)
 - example: On `42`, becomes `43`
 
-Ctrl+x: Decrement number
+`Ctrl+x`: Decrement number
 - mnemonic: **-x** (think subtraction)
 - example: On `42`, becomes `41`
 
 ### Text formatting
-gq: Format text
+`gq`: Format text
 - mnemonic: **g**ood **q**uote (for text wrapping)
 - example: `gqip` reformats current paragraph
 
-==: Auto-indent line
+`==`: Auto-indent line
 - mnemonic: **=** (equals for alignment)
 - example: Fixes indentation on current line
 
-gg=G: Auto-indent entire file
+`gg=G`: Auto-indent entire file
 - mnemonic: **gg** (start) **=** (indent) **G** (end)
 - example: Properly indents whole file
 
@@ -308,49 +308,49 @@ gg=G: Auto-indent entire file
 
 ## 🛠️ Useful Commands
 ### File operation
-:w - Save file
+`:w` - Save file
 - mnemonic: **w**rite
 - example: :w myfile.txt saves to myfile.txt
 
-:q - Quit
+`:q` - Quit
 - mnemonic: **q**uit
 - example: :q closes current window
 
-:wq - Save and quit
+`:wq` - Save and quit
 - mnemonic: **w**rite + **q**uit
 - example: :wq saves changes and exits
 
-:q! - Force quit without saving
+`:q!` - Force quit without saving
 - mnemonic: ! means "force"
 - example: :q! discards all changes
 
-:e file - Open file
+`:e` file - Open file
 - mnemonic: **e**dit
 - example: :e ~/.vimrc opens vim config
 
-:e! - Reload file (discard changes)
+`:e!` - Reload file (discard changes)
 - mnemonic: ! means "discard current"
 - example: :e! reverts to saved version
 
 
 ### File management
-:saveas - Save as new file
+`:saveas` - Save as new file
 - mnemonic: literal meaning
 - example: :saveas backup.txt creates copy
 
-:set nu - Show line numbers
+`:set nu` - Show line numbers
 - mnemonic: **nu**mbers
 - example: :set nu displays line numbers
 
-:set nonu - Hide line numbers
+`:set nonu` - Hide line numbers
 - mnemonic: **no** **nu**mbers
 - example: :set nonu hides numbering
 
-:set paste - Enable paste mode
+`:set paste` - Enable paste mode
 - mnemonic: literal
 - example: Before pasting external text
 
-:set nopaste - Disable paste mode
+`:set nopaste` - Disable paste mode
 - mnemonic: **no**paste
 - example: After pasting to resume formatting
 
@@ -376,21 +376,21 @@ gg=G: Auto-indent entire file
   - `:vmap`       - Shows visual mode mappings
   - `:imap`       - Shows insert mode mappings
 
-:verb map <key> - Show key's definition and origin
+`:verb map <key>` - Show key's definition and origin
 - mnemonic: **verb**ose mapping
 - example: 
   :verb map <Leader>f  - Shows where <Leader>f was defined
   :verb map <C-Space> - Debug complex key combinations
 
 ### System information
-:reg - Show register contents
+`:reg` - Show register contents
 - mnemonic: **reg**isters
 - example: 
   :reg      - Shows all registers
   :reg a    - Show only register 'a'
   "ap       - Paste from register 'a'
 
-:marks - Show all marks
+`:marks` - Show all marks
 - mnemonic: Literal
 - example: 
   :marks    - List all marks
@@ -400,57 +400,57 @@ gg=G: Auto-indent entire file
 
 ## 📌 Special Operations
 ### Code navigation
-gd: Go to definition
+`gd`: Go to definition
 - mnemonic: **g**o **d**efinition
 - example: Hover over function → `gd` jumps to its definition
 
-K: Show documentation
+`K`: Show documentation
 - mnemonic: **K**now (like man pages)
 - example: Cursor on function → `K` shows its docs
 
-Ctrl+]: Jump to tag definition
+`Ctrl+]`: Jump to tag definition
 - mnemonic: ] looks like arrow pointing in
 - example: Jump to function/variable declaration
 
-Ctrl+t: Jump back from tag
+`Ctrl+t`: Jump back from tag
 - mnemonic: **t**ag back
 - example: Return from definition jump
 
 ### Diff tool
-do: Diff obtain (get changes)
+`do`: Diff obtain (get changes)
 - mnemonic: **d**iff **o**btain
 - example: In diff view, pull changes from other file
 
-dp: Diff put (send changes)
+`dp`: Diff put (send changes)
 - mnemonic: **d**iff **p**ut
 - example: In diff view, push changes to other file
 
-]c: Next diff
+`]c`: Next diff
 - mnemonic: ] moves forward
 - example: Jump to next changed block
 
-[c: Previous diff
+`[c`: Previous diff
 - mnemonic: [ moves backward
 - example: Jump to previous changed block
 
 ### Folding controls
-zc: Close fold
+`zc`: Close fold
 - mnemonic: **z**ip **c**lose
 - example: Collapse current code block
 
-zo: Open fold
+`zo`: Open fold
 - - mnemonic: **z**ip **o**pen
 - - example: Expand current collapsed block
 
-za: Toggle fold
+`za`: Toggle fold
 - - mnemonic: **z**ip **a**lternate
 - - example: Toggle current fold state
 
-zR: Open all folds
+`zR`: Open all folds
 - mnemonic: **R**ecursively open
 - example: Expand all nested folds
 
-zM: Close all folds
+`zM`: Close all folds
 - mnemonic: **M**aximally close
 - example: Collapse entire file structure
 
