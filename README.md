@@ -59,45 +59,45 @@ gg: Top of file
 G: Bottom of file  
 - mnemonic: (none)  
 
-H: Top of screen  
+`H`: Top of screen  
 - mnemonic: **H**igh  
 
-M: Middle of screen  
+`M`: Middle of screen  
 - mnemonic: **M**iddle  
 
-L: Bottom of screen  
+`L`: Bottom of screen  
 - mnemonic: **L**ow  
 
-Ctrl+u: Scroll up half page  
+`Ctrl+u`: Scroll up half page  
 - mnemonic: (none)  
 
-Ctrl+d: Scroll down half page  
+`Ctrl+d`: Scroll down half page  
 - mnemonic: (none)  
 
-Ctrl+o: Jump back to previous location  
+`Ctrl+o`: Jump back to previous location  
 - mnemonic: (none)  
 
-Ctrl+i: Jump forward to next location  
+`Ctrl+i`: Jump forward to next location  
 - mnemonic: (none)  
 
-[{: Previous block bracket  
+`[{`: Previous block bracket  
 - mnemonic: (none)  
 
-]}: Next block bracket  
+`]}`: Next block bracket  
 - mnemonic: (none)  
 
-[(: Previous block curly  
+`[(`: Previous block curly  
 - mnemonic: (none)  
 
-]): Next block curly  
+`])`: Next block curly  
 - mnemonic: (none)  
 
 ## Text Objects
-ci": Change inside quotes  
+`ci"`: Change inside quotes  
 - mnemonic: **c**hange **i**nside "quotes"
 - example: `ci"` → edit "text" between quotes
 
-ci': Change inside single quotes
+`ci'`: Change inside single quotes
 - mnemonic: **c**hange **i**nside 'quotes'
 - example: `ci'` → edit 'text' between single quotes
 
@@ -105,94 +105,94 @@ ci(: Change inside parentheses
 - mnemonic: **c**hange **i**nside (parens)
 - example: `ci(` → edit (text) inside parentheses
 
-ci[: Change inside brackets
+`ci[`: Change inside brackets
 - mnemonic: **c**hange **i**nside [brackets]
 - example: `ci[` → edit [text] inside brackets
 
-ci{: Change inside braces
+`ci{`: Change inside braces
 - mnemonic: **c**hange **i**nside {braces}
 - example: `ci{` → edit {text} inside curly braces
 
-cit: Change inside HTML tag
+`cit`: Change inside HTML tag
 - mnemonic: **c**hange **i**nside <tag>
 - example: `cit` → edit `<p>text</p>` within tags
 
-ciw: Change inside word
+`ciw`: Change inside word
 - mnemonic: **c**hange **i**nner **w**ord
 - example: `ciw` → edit 'word' under cursor
 
-yiw: Yank inner word
+`yiw`: Yank inner word
 - mnemonic: **y**ank **i**nner **w**ord
 - example: `yiw` → copy 'word' to register
 
-diw: Delete inner word
+`diw`: Delete inner word
 - mnemonic: **d**elete **i**nner **w**ord
 - example: `diw` → remove 'word' under cursor
 
-da": Delete around quotes
+`da"`: Delete around quotes
 - mnemonic: **d**elete **a**round "quotes"
 - example: `da"` → delete "text" including quotes
 
-dat: Delete around HTML tag
+`dat`: Delete around HTML tag
 - mnemonic: **d**elete **a**round <tag>
 - example: `dat` → delete `<p>text</p>` entirely
 
 ## Visual Mode
-v: Enter character-wise visual mode
+`v`: Enter character-wise visual mode
 - mnemonic: **v**isual
 - example: Select characters by moving cursor
 
-V: Enter line-wise visual mode
+`V`: Enter line-wise visual mode
 - mnemonic: **V**isual-line
 - example: Select entire lines by moving up/down
 
-Ctrl+v: Enter block visual mode
+`Ctrl+v`: Enter block visual mode
 - mnemonic: Visual-**b**lock (Ctrl+v looks like block selection)
 - example: Select vertical columns of text
 
->: Indent selection
+`>`: Indent selection
 - mnemonic: Right angle = increase indent
 - example: `>j` indents current and next line
 
-<: Unindent selection
+`<`: Unindent selection
 - mnemonic: Left angle = decrease indent
 - example: `<k` unindents current and previous line
 
-y: Yank (copy) selection
+`y`: Yank (copy) selection
 - mnemonic: **y**ank
 - example: `y` then `p` to paste selection
 
-d: Delete selection
+`d`: Delete selection
 - mnemonic: **d**elete
 - example: `d` removes highlighted text
 
-~: Toggle case of selection
+`~`: Toggle case of selection
 - mnemonic: ~ looks like a tilde/wave for switching
 - example: `~` changes "Text" to "tEXT"
 
-gv: Reselect last visual selection
+`gv`: Reselect last visual selection
 - mnemonic: **g**o **v**isual
 - example: After escape, `gv` re-highlights previous area
 
 ## Search & Replace
 ### Search Command
-/pattern: Search forward
+`/pattern`: Search forward
 - mnemonic: / leans forward → forward search
 - example: /hello finds next "hello"
 
-?pattern: Search backward
+`?pattern`: Search backward
 - mnemonic: ? leans backward → backward search
 - example: ?error finds previous "error"
 
-n: Next match
+`n`: Next match
 - mnemonic: **n**ext
 - example: After /search, press n to find next
 
-N: Previous match
+`N`: Previous match
 - mnemonic: **N**ot-next (opposite of n)
 - example: After /search, press N to go back
 
-*: Search word under cursor (forward)
+`*`: Search word under cursor (forward)
 - mnemonic: * is a wildcard → expand current word
 - example: Over "text", * finds next "text"
 
@@ -264,7 +264,7 @@ Ctrl+w l: Move to right window
 - mnemonic: **l** (vim's right movement key)
 - example: Move cursor to right pane
 
-## 💎 Advanced Operations
+## Advanced Operations
 ### Macro command
 q[a-z]: Start recording macro
 - mnemonic: **q**ueue recording in register [a-z]
@@ -357,24 +357,24 @@ gg=G: Auto-indent entire file
 
 ## � Help & Discovery
 ### Help system
-:help [topic] - Open help
+`:help [topic]` - Open help
 - mnemonic: Literal
 - example: 
-  :help w       - Show help for 'w' command
-  :help :w      - Show help for :w command
-  :help options - Learn about configuration
+  - `:help w`       - Show help for 'w' command
+  - `:help :w`      - Show help for :w command
+  - `:help options` - Learn about configuration
 
-:options - Open interactive options window
+`:options` - Open interactive options window
 - mnemonic: Literal
 - example: Browse/change settings with GUI-like interface
 
 ### Key mapping inspections
-:map - Show all custom key mappings
+`:map` - Show all custom key mappings
 - mnemonic: Literal
 - example: 
-  :map        - Shows normal mode mappings
-  :vmap       - Shows visual mode mappings
-  :imap       - Shows insert mode mappings
+  - `:map`        - Shows normal mode mappings
+  - `:vmap`       - Shows visual mode mappings
+  - `:imap`       - Shows insert mode mappings
 
 :verb map <key> - Show key's definition and origin
 - mnemonic: **verb**ose mapping
