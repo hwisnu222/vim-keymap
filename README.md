@@ -32,6 +32,10 @@
 | `Ctrl+d`  | Scroll down half page           |                            |
 | `Ctrl+o`  | Jump back to previous location  |                            |
 | `Ctrl+i`  | Jump forward to next location   |                            |
+| `[{`      | Previos block bracket           |                            |
+| `]}`      | Next block bracket              |                            |
+| `[(`      | Previos block curly             |                            |
+| `])`      | Next block curly                |                            |
 
 ## 🔥 Text Objects
 | Key       | Action                          | Example                     |
