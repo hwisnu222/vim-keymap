@@ -213,7 +213,7 @@
 - mnemonic: No % → current line only
 - example: :s/yes/no/g changes on current line
 
-## 📦 Window Management
+## Window Management
 `Ctrl+w c`: Close current window
 - mnemonic: **c**lose
 - example: Closes current pane (buffer stays loaded)
@@ -306,7 +306,7 @@
 
 
 
-## 🛠️ Useful Commands
+## Useful Commands
 ### File operation
 `:w` - Save file
 - mnemonic: **w**rite
@@ -355,7 +355,7 @@
 - example: After pasting to resume formatting
 
 
-## � Help & Discovery
+## Help & Discovery
 ### Help system
 `:help [topic]` - Open help
 - mnemonic: Literal
@@ -398,7 +398,7 @@
   - `.`        - Jump to last edit position
 
 
-## 📌 Special Operations
+## Special Operations
 ### Code navigation
 `gd`: Go to definition
 - mnemonic: **g**o **d**efinition
