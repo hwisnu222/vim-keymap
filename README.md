@@ -379,23 +379,23 @@
 `:verb map <key>` - Show key's definition and origin
 - mnemonic: **verb**ose mapping
 - example: 
-  :verb map <Leader>f  - Shows where <Leader>f was defined
-  :verb map <C-Space> - Debug complex key combinations
+  - `:verb map <Leader>f`  - Shows where <Leader>f was defined
+  - `:verb map <C-Space>` - Debug complex key combinations
 
 ### System information
 `:reg` - Show register contents
 - mnemonic: **reg**isters
 - example: 
-  :reg      - Shows all registers
-  :reg a    - Show only register 'a'
-  "ap       - Paste from register 'a'
+  - `:reg`      - Shows all registers
+  - `:reg a`    - Show only register 'a'
+  - `"ap`       - Paste from register 'a'
 
 `:marks` - Show all marks
 - mnemonic: Literal
 - example: 
-  :marks    - List all marks
-  'a        - Jump to mark 'a'
-  `.        - Jump to last edit position
+  - `:marks`    - List all marks
+  - `a`        - Jump to mark 'a'
+  - `.`        - Jump to last edit position
 
 
 ## 📌 Special Operations
