@@ -1,32 +1,15 @@
-# Custom keymap
+# Neovim
 
-## Init config vim keymap
+## Init config neovim keymap
 
 create file config
 
 ```
-# vim
-vim ~/.vimrc
-
-
 # neovim 
 nvim ~/.config/nvim/init.lua
 ```
 
 and puth config vim to this file for example like this
-
-```vim
-" ~/.vimrc
-" Set leader key
-let mapleader = " "
-
-" Custom keymaps
-nnoremap <leader>w :w<CR>
-inoremap jk <Esc>
-vnoremap <C-c> "+y
-```
-
-or if you use *.lua file you can set keymap with keymap method useing lua
 
 ```lua
 -- ~/.config/nvim/init.lua

@@ -1,9 +1,31 @@
 # Vim
 
+## Init config vim keymap
+
+create file config
+
+```
+# vim
+vim ~/.vimrc
+```
+
+and puth config vim to this file for example like this
+
+```vim
+" ~/.vimrc
+" Set leader key
+let mapleader = " "
+
+" Custom keymaps
+nnoremap <leader>w :w<CR>
+inoremap jk <Esc>
+vnoremap <C-c> "+y
+```
+
 set keymap on `.vimrc` by default vim use format 
 
 ```vim
-" Format dasar:
+" Basic Format:
 :[mode]map <combination-keyboard> <command>
 ```
 
