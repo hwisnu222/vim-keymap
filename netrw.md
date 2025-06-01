@@ -27,3 +27,8 @@ open file manager netrw using command
 :NetrwDel X  " delete file X
 :NetrwRename X Y  " rename file X to Y
 ```
+
+
+
+### Resources:
+- https://vonheikemen.github.io/devlog/tools/using-netrw-vim-builtin-file-explorer/
