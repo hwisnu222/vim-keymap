@@ -129,6 +129,11 @@
 - mnemonic: **d**elete **i**nner **w**ord
 - example: `diw` → remove 'word' under cursor
 
+`vi{`: Visual/select inside braces
+- mnemonic: **v**isual **i**nside {braces}
+- example: `vi{` → visual/select {text} inside curly braces
+
+
 `da"`: Delete around quotes
 - mnemonic: **d**elete **a**round "quotes"
 - example: `da"` → delete "text" including quotes
