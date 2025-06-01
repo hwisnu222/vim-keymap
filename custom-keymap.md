@@ -1,4 +1,48 @@
-# Complete Guide to `vim.keymap.set()` with Modifier Keys
+# Custom keymap
+
+## Init config vim keymap
+
+create file config
+
+```
+# vim
+vim ~/.vimrc
+
+
+# neovim 
+nvim ~/.config/nvim/init.lua
+```
+
+and puth config vim to this file for example like this
+
+```vim
+" ~/.vimrc
+" Set leader key
+let mapleader = " "
+
+" Custom keymaps
+nnoremap <leader>w :w<CR>
+inoremap jk <Esc>
+vnoremap <C-c> "+y
+```
+
+or if you use *.lua file you can set keymap with keymap method useing lua
+
+```lua
+-- ~/.config/nvim/init.lua
+vim.g.mapleader = " "
+
+-- Normal mode
+vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
+vim.keymap.set('n', '<C-s>', ':w<CR>')
+
+-- Insert mode
+vim.keymap.set('i', 'jk', '<Esc>')
+```
+
+
+
+## Complete Guide to `vim.keymap.set()` with Modifier Keys For Lua Neovim Config
 
 ## Modifier Key Syntax
 | Modifier | Syntax       | Example       | Description              |
