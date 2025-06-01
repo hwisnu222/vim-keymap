@@ -74,3 +74,7 @@ if you want to see all keymap, you can run this command
 :map  " semua mapping
 :nmap " normal mode mapping
 ```
+
+
+### Resources:
+- https://learnvimscriptthehardway.stevelosh.com/
