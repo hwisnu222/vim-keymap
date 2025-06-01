@@ -284,6 +284,23 @@
 - mnemonic: **l** (vim's right movement key)
 - example: Move cursor to right pane
 
+`:tabn`: Switch to next tab  
+mnemonic: **Tab Next**
+
+`:tabp`: Switch to previous tab  
+mnemonic: **Tab Previous**
+
+`:tabfirst`: Switch to first tab  
+mnemonic: -
+
+`:tablast`: Switch to last tab  
+mnemonic: -
+
+`2gt`: Switch to tab number 2  
+mnemonic: **G**o to **T**ab 2
+
+
+
 ## Advanced Operations
 ### Macro command
 `q[a-z]`: Start recording macro
