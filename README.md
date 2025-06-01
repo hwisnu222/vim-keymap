@@ -252,6 +252,21 @@
 - mnemonic: **v**ertical (same as :vsp)
 - example: Splits current buffer vertically
 
+`:res +20` : Resize horizontal window
+
+`:vert res +80` : Resize vertical
+
+
+`Ctrl+w o` : Close all window except active window\
+
+`Ctrl+w r` : Rotate window
+
+`gt` : Go to next tab
+
+`gT` : Go to previous tab
+
+`2gt` : Go to tab number 2
+
 ### Window navigation
 `Ctrl+w h`: Move to left window
 - mnemonic: **h** (vim's left movement key)
