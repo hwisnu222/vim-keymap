@@ -491,6 +491,13 @@ mnemonic: **G**o to **T**ab 2
 - mnemonic: **M**aximally close
 - example: Collapse entire file structure
 
+## Multilines
+
+`o`: new line under cursor
+`O`: new line above cursor
+`5o`: 5 new line under cursor
+`5O`: 5 ne line above cursor
+
 
 
 > **Pro Tip**: Combine motions with commands for powerful editing:
