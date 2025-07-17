@@ -1,4 +1,34 @@
 # Ultimate Vim Keymap Cheatsheet for Coding
+
+# Table of Contents
+* [Essential Editing](#essential-editing)
+* [Navigation](#navigation)
+* [Text Objects](#text-objects)
+* [Visual Mode](#visual-mode)
+* [Search & Replace](#search--replace)
+  * [Search Command](#search-command)
+  * [Replace command](#replace-command)
+* [Window Management](#window-management)
+  * [Window splitting](#window-splitting)
+  * [Window navigation](#window-navigation)
+* [Advanced Operations](#advanced-operations)
+  * [Macro command](#macro-command)
+  * [Number operations](#number-operations)
+  * [Text formatting](#text-formatting)
+* [Useful Commands](#useful-commands)
+  * [File operation](#file-operation)
+  * [File management](#file-management)
+* [Help & Discovery](#help--discovery)
+  * [Help system](#help-system)
+  * [Key mapping inspections](#key-mapping-inspections)
+  * [System information](#system-information)
+* [Special Operations](#special-operations)
+  * [Code navigation](#code-navigation)
+  * [Diff tool](#diff-tool)
+  * [Folding controls](#folding-controls)
+* [Multilines](#multilines)
+* [Additional vim motions](#vim-motions)
+
 ## Essential Editing
 
 `x`: Delete character under cursor  
