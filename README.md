@@ -499,6 +499,9 @@ mnemonic: **G**o to **T**ab 2
 `5O`: 5 ne line above cursor
 
 
+## Vim motions
+
+`$F"` or `va"<Esc>` or `vi"<Esc>`: navigate last double quote
 
 > **Pro Tip**: Combine motions with commands for powerful editing:
 > - `d3w` → Delete 3 words forward
