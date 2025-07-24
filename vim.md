@@ -98,5 +98,19 @@ if you want to see all keymap, you can run this command
 ```
 
 
+## File type
+show filetype for file
+
+```vim
+:set filetype?
+```
+
+output
+
+```
+filetype=javascript
+```
+
+
 ### Resources:
 - https://learnvimscriptthehardway.stevelosh.com/
